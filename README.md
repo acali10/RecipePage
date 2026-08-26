@@ -10,7 +10,7 @@ Resolução do desafio **Recipe Page** do [Frontend Mentor](https://www.frontend
 
 ## 📷 Demonstração
 
-[![Preview do Projeto](assets/screenshot.png)]
+![Preview do Projeto](assets/screenshot.png)
 
 ---
 
@@ -71,7 +71,7 @@ git clone https://acali10.github.io/RecipePage.git
 2. Acesse a pasta do projeto:
 
 ```
-cd CardBlog
+cd RecipePage
 ```
 
 3. Abra o arquivo `index.html` em seu navegador.
