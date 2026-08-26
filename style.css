@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+:root{
+    --White: #ffffff;
+    --Stone100: #f3e6d8;
+    --Stone150: #e4ded8;
+    --Stone600: #5f574e;
+    --Stone900: #302d2c;
+    --Brown800: #854632;
+    --Rose800: #7b284f;
+    --Rose50: #fff5fa;
+}
+
+body{
+    background-color: var(--Stone100);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    padding: clamp(1.25rem, 4vw, 2rem) 1rem;
+    color: var(--Stone600);
+
+    h1, h2{
+        font-family: 'Young Serif', serif;
+        font-weight: 300;
+    }
+
+    h1{
+        color: var(--Stone900);
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: 1.5rem;
+    }
+}
+
+main{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--White);
+    width: min(100%, 700px);
+    padding: clamp(1.5rem, 6vw, 2.5rem) clamp(1.25rem, 6vw, 2.5rem);
+    border-radius: 1.25rem;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.preparation{
+    background-color: var(--Rose50);
+    padding: clamp(1rem, 5vw, 1.5rem) clamp(1rem, 6vw, 2.5rem);
+    border-radius: 0.75rem;
+    margin: 1.5rem 0 1.5rem 0;
+    line-height: 2rem;
+
+    h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--Rose800);
+    margin-bottom: 1rem;
+    }
+}
+
+.ingredients{
+
+    ul{
+    margin: 1rem 0 1.5rem 1.5rem;
+    line-height: 2rem;
+    }
+
+    h2{
+        color: var(--Brown800);
+    }
+}
+
+.instructions{
+
+    ol{
+    margin: 1rem 0 1.5rem 1.5rem;
+    line-height: 2rem;
+
+    }
+        h2{
+        color: var(--Brown800);
+    }
+
+    ol li::marker{
+        color: var(--Brown800);
+        font-weight: 600;
+    }
+}
+
+.nutrition{
+
+    line-height: 2rem;
+
+    h2{
+        color: var(--Brown800);
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: 1rem;
+    }
+
+}
+
+.tabela{
+    border-bottom: solid 0.5px var(--Stone600);
+    padding: 10px 0 10px 16px;
+}
+
+.tabela:last-child{
+    border-bottom: none;
+}
+
+.info{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+    dd{
+        font-weight: 600;
+        color: var(--Brown800);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--Stone600);
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+}
